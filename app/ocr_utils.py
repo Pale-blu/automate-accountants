@@ -3,8 +3,13 @@ from pdf2image import convert_from_path
 from datetime import datetime
 import re
 
+pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+
 def extract_receipt_data(pdf_path: str):
-    images = convert_from_path(pdf_path)
+    images = convert_from_path(
+        pdf_path,
+        poppler_path=r"C:\Program Files\poppler\poppler-24.08.0\Library\bin"  # Update path as needed
+    )    
     text = "\n".join(pytesseract.image_to_string(img) for img in images)
 
     lines = [line.strip() for line in text.splitlines() if line.strip()]

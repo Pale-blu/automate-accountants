@@ -2,6 +2,9 @@ from pydantic import BaseModel
 from typing import Optional
 from datetime import datetime
 
+class FileRequest(BaseModel):
+    file_name: str
+
 class ReceiptFileSchema(BaseModel):
     id: int
     file_name: str
@@ -17,7 +20,7 @@ class ReceiptFileSchema(BaseModel):
 
 class ReceiptSchema(BaseModel):
     id: int
-    purchased_at: datetime
+    purchased_at: Optional[datetime]
     merchant_name: str
     total_amount: float
     file_path: str
