@@ -1,1 +1,35 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# SQLite database
+*.db
+
+# macOS & Windows system files
 .DS_Store
+Thumbs.db
+desktop.ini
+
+# Python virtualenv
+venv/
+env/
+ENV/
+
+# pipenv & poetry
+Pipfile.lock
+poetry.lock
+
+# VSCode settings
+.vscode/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Test output
+htmlcov/
+.coverage
+
