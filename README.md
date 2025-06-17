@@ -1,7 +1,6 @@
 # 🧾 Automate Accountants - Receipt OCR API
 
 📥 Clone the Repository
-```bash
 git clone https://github.com/Pale-blu/automate-accountants.git
 OR
 Just download the ZIP file and that should work fine as well.
