@@ -1,7 +1,6 @@
 # 🧾 Automate Accountants - Receipt OCR API
 
-## 📥 Clone the Repository
-
+📥 Clone the Repository
 ```bash
 git clone https://github.com/Pale-blu/automate-accountants.git
 OR
